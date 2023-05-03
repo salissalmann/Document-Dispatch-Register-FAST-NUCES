@@ -1,0 +1,41 @@
+.NavBar
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    background-color:  #031429;
+    color: white;
+    padding: 1rem
+}
+#Login-Container
+{
+    border: 1px solid #031429;
+    border-radius: 5px;
+}
+#sidebar
+{
+    display: flex;
+    justify-content: center;
+    background-color: #031429;
+}
+#sidebar-2
+{
+    font-family: 'Nunito', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+}
+#login-form
+{
+    display: flex;
+    justify-content: center;
+    margin-left: -12rem;
+}
+#login-form-2
+{
+    display: flex;
+    justify-content: center;
+    margin-left: -1rem;
+}
