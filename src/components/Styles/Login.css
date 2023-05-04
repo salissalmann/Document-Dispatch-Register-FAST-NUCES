@@ -5,7 +5,8 @@
     font-family: 'Nunito', sans-serif;
     background-color:  #031429;
     color: white;
-    padding: 1rem
+    padding: 1rem;
+    font-size: 0.3rem;
 }
 #Login-Container
 {

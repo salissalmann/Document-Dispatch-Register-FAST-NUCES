@@ -48,14 +48,14 @@ export default function Login() {
             <h1>Document Dispatch Register</h1>
        </div>
 
-       <div className="container my-4" id="Login-Container">
+       <div className="container my-5" id="Login-Container">
             <div className='row'>
                 <div className="col" id="sidebar">
-                    <img src="/LoginSidebar.png" alt="Logo" />
+                    <img src="/LoginSidebar.png" alt="Logo" height={650} />
                 </div>
                 <div className="col" id="sidebar-2">
-                    <Typography color="#031429" fontWeight="bold" fontSize="2.5rem" textAlign={"center"} marginTop="-2vw"> Login to your Account </Typography>
-                    <Typography color="#031429" fontWeight="700px" fontSize="1.6rem" textAlign={"center"} marginBottom="2rem"> Enter Account Information </Typography>
+                    <Typography color="#031429" fontWeight="bold" fontSize="2.2rem" textAlign={"center"} marginTop="-2vw" fontFamily="Nunito"> Login to your Account </Typography>
+                    <Typography color="#031429" fontWeight="700px" fontSize="1.6rem" textAlign={"center"} marginBottom="2rem" fontFamily="Nunito"> Enter Account Information </Typography>
                     <form onSubmit={Submit}>
                     <div id="login-form">
                         <div className="row">
@@ -77,7 +77,7 @@ export default function Login() {
                     </div>
 
                     <div id="login-form-2">
-                        <Button type="submit" sx={{backgroundColor:"#031429", color:"white", width:"60%" , marginTop:"1%"}}> Login </Button>
+                        <Button type="submit" sx={{backgroundColor:"#031429", color:"white", width:"60%" , marginTop:"1%" ,fontFamily:"Nunito"}}> Login </Button>
                     </div>
                     </form>
                 </div>
