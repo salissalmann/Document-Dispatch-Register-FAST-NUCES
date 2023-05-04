@@ -45,7 +45,7 @@ export default function Login() {
     return (
     <>
        <div className="NavBar">
-            <h1>Document Dispatch Register</h1>
+            <h3>Document Dispatch Register</h3>
        </div>
 
        <div className="container my-5" id="Login-Container">
