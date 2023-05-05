@@ -33,6 +33,11 @@ export default function Dashboard() {
             </div>
 
             <div className="container" id="Page-Container">
+                <h4>Delete Document</h4>
+                <h4><Link to="DeleteDocument"><VscAdd/></Link></h4>
+            </div>
+
+            <div className="container" id="Page-Container">
                 <h4>View Analytics</h4>
                 <h4><Link to="ViewAnalytics"><VscAdd/></Link></h4>
             </div>

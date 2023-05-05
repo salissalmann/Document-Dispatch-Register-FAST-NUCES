@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Styles/Dashboard.css"
-
+import {Link} from "react-router-dom"
 export default function Navigation() {
     return (
         <>
             <div id="Navbar">
                 <div>
-                    <h3>Document Dispatch Register</h3>
+                <Link to="/dashboard" id="h"><h3>Document Dispatch Register</h3></Link>
                 </div>
                 <div>
                     <a className="fancy" href="/">

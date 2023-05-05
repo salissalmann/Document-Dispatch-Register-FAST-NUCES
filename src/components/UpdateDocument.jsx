@@ -44,6 +44,7 @@ export default function UpdateDocument() {
     const Dispatch = (element)=>
     {
         Context.Dispatch(element);
+        toast.success("Document Updated Successfully");
     }
     return (
     <>
@@ -116,6 +117,7 @@ export default function UpdateDocument() {
           </TableContainer>
         </div>
       )}
+      <ToastContainer theme="colored"/>
     </>
   );
 }

@@ -154,4 +154,36 @@
   .footer .container {
     text-align: center;
   }
-  
+#Main
+{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  margin-left: 30rem;
+}
+.Display{
+  display: flex;
+  width: 60%;
+  justify-content:space-between;
+  font-family: 'Nunito', sans-serif;
+  background-color:  #031429;
+  color: white;
+  padding: 1rem;
+}
+
+.Display-1
+{
+  margin-top: 1rem;
+  display: flex;
+  width: 60%;
+  justify-content:space-between;
+  font-family: 'Nunito', sans-serif;
+  background-color:  #F4CA29;
+  color: white;
+  padding: 1rem;
+}
+#h
+{
+  text-decoration: none;
+  color: white;
+}

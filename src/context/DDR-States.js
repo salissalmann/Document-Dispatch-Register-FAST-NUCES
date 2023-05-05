@@ -223,46 +223,24 @@ const DDRStates = (props)=>
         SetAllDocuments(NewData)
     }
 
-    function generateReport() {
-        let report = {
-          dispatches: {
-            daily: {},
-            weekly: {},
-            monthly: {},
-            total: 0,
-          },
-          pending: 0,
-        };
-      
-        Documents.forEach((doc) => {
-          if (doc.status === "Dispatched") {
-            let date = new Date(doc.date);
-            let dailyKey = `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
-            if (!report.dispatches.daily[dailyKey]) {
-              report.dispatches.daily[dailyKey] = 0;
+    const Delete = (element) =>{
+        let Data = []
+        Documents.map((document) => {
+            if (document.id===element.id && document.date===element.date && document.time===element.time)
+            {
+                document.status = "Dispatched"
             }
-            report.dispatches.daily[dailyKey]++;
-            let weeklyKey = `${date.getFullYear()}-W${date.getWeek()}`;
-            if (!report.dispatches.weekly[weeklyKey]) {
-              report.dispatches.weekly[weeklyKey] = 0;
+            else
+            {
+                Data.push(document)
             }
-            report.dispatches.weekly[weeklyKey]++;
-            let monthlyKey = `${date.getFullYear()}-${date.getMonth() + 1}`;
-            if (!report.dispatches.monthly[monthlyKey]) {
-              report.dispatches.monthly[monthlyKey] = 0;
-            }
-            report.dispatches.monthly[monthlyKey]++;      
-            report.dispatches.total++;
-          } else {
-            report.pending++;
-          }
-        });
-      
-        return report;
-      }
-      
+        })
+        SetDocuments(Data)
+    }
+
+
     return (
-        <DDRContext.Provider value={{ AdminEmail , AdminPassword , Documents , SetDocuments , SearchDocument , SearchedDocuments, Dispatch , GetDocument , AllDocuments , generateReport }}>
+        <DDRContext.Provider value={{ Delete , AdminEmail , AdminPassword , Documents , SetDocuments , SearchDocument , SearchedDocuments, Dispatch , GetDocument , AllDocuments }}>
             {props.children}
         </DDRContext.Provider>
     )

@@ -32,7 +32,6 @@ export default function TrackDocument() {
             return;
         }
         await Context.SearchDocument(StudentRoll);
-        console.log(StudentDocuments)
         SetSubmission(false);
     };
   

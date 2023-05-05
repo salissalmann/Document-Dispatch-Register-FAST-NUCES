@@ -32,13 +32,19 @@ export default function StudentDocument() {
         }
         Fetch()
     }, [Context.AllDocuments]);
+
+    const Delete = (element)=>
+    {
+        Context.Delete(element);
+        toast.error("Successfully Deleted")
+    }
   
     return (
         <>
             <Navigation />
             <div className="container my-5">
                 <div className='home-page-text-1'>
-                    <h1>Student Documents</h1>
+                    <h1>Delete Student Documents</h1>
                 </div>
             </div>
   
@@ -53,6 +59,7 @@ export default function StudentDocument() {
                                 <TableCell>Date</TableCell>
                                 <TableCell>Time</TableCell>
                                 <TableCell>Status</TableCell>
+                                <TableCell>     </TableCell>
                             </TableRow>
                         </TableHead>
                         <TableBody>
@@ -64,12 +71,14 @@ export default function StudentDocument() {
                                     <TableCell>{formatDate(element.date)}</TableCell>
                                     <TableCell>{element.time}</TableCell>
                                     <TableCell>{element.status}</TableCell>
+                                    <TableCell><button className='btn btn-danger' onClick={()=>{Delete(element)}}>Delete</button></TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
                     </Table>
                 </TableContainer>
             </div>
+            <ToastContainer theme="colored"/>
         </>
     )
 }
