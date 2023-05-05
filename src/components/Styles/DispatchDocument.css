@@ -1,0 +1,122 @@
+.home-page-text-1
+{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 10rem;
+    font-weight: 700;
+    color: #1D1D20;
+    padding: 0;
+}
+.home-page-text-1 h1
+{
+    margin-top:3rem;
+    font-size: 2rem;
+}
+.upload-btn
+{
+    border: 0;
+    width: 50%;
+    background-color: #031429;
+}
+#input 
+{
+    width: 48.5%;
+    height: 50px;
+    padding: 0 16px;
+    margin-right: 1rem;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid  #031429;
+    color: gray;
+    animation: shake_541 0.14s 3;
+}
+  
+#input:valid 
+{
+border-color:  #031429;
+animation: none;
+}
+
+@keyframes shake_541 {
+0%, 100% {
+    translate: 0;
+}
+
+25% {
+    translate: 8px 0;
+}
+
+75% {
+    translate: -8px 0;
+}
+}
+
+#input-1
+{
+    width: 35rem;
+    height: 50px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid  #031429;
+    color: gray;
+    animation: shake_541 0.14s 3;
+}
+  
+#input-1:valid 
+{
+border-color:  #031429;
+animation: none;
+}
+
+@keyframes shake_541 {
+0%, 100% {
+    translate: 0;
+}
+
+25% {
+    translate: 8px 0;
+}
+
+75% {
+    translate: -8px 0;
+}
+}
+#btn-upload
+{
+    border: 1px solid  #031429;
+    width: 95.5%;
+    margin-left: 0.8rem;
+    background-color: white;
+    color: gray;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+#input-fy-2
+{
+    width: 48.5%;
+    height: 50px;
+    padding: 0 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid  #031429;
+    color: gray;
+    animation: shake_541 0.14s 3;
+}
+  
+#input-fy-2:valid 
+{
+border-color:  #031429;
+animation: none;
+}
+#Form-Container
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.form-text
+{
+    text-align: center;
+    margin-left: 15rem;
+}

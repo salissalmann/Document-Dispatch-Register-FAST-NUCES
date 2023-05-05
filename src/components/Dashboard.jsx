@@ -1,14 +1,14 @@
-import React, { useContext , useState } from 'react'
-import DDRContext from '../context/DDR-Context'
+import React from 'react'
 import "./Styles/Dashboard.css"
 import Navigation from "./Navigation"
-import { Button, TextField, Typography } from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Typography } from "@mui/material";
 import {VscAdd} from "react-icons/vsc"
+import { Link } from "react-router-dom";
 
 export default function Dashboard() {
+
+
+
     return (
         <>
             <Navigation/>
@@ -19,27 +19,27 @@ export default function Dashboard() {
 
             <div className="container" id="Page-Container">
                 <h4>Dispatch Document</h4>
-                <h4><VscAdd/></h4>
+                <h4><Link to="AddDocument"><VscAdd/></Link></h4>
             </div>
             
             <div className="container" id="Page-Container">
                 <h4>Track Document</h4>
-                <h4><VscAdd/></h4>
+                <h4><Link to="TrackDocument"><VscAdd/></Link></h4>
             </div>
 
             <div className="container" id="Page-Container">
                 <h4>Update Document</h4>
-                <h4><VscAdd/></h4>
+                <h4><Link to="UpdateDocument"><VscAdd/></Link></h4>
             </div>
 
             <div className="container" id="Page-Container">
                 <h4>View Analytics</h4>
-                <h4><VscAdd/></h4>
+                <h4><Link to="ViewAnalytics"><VscAdd/></Link></h4>
             </div>
 
             <div className="container" id="Page-Container">
                 <h4>View Student Documents</h4>
-                <h4><VscAdd/></h4>
+                <h4><Link to="ViewStudents"><VscAdd/></Link></h4>
             </div>
 
             <footer className="footer">
